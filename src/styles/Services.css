@@ -1,0 +1,221 @@
+
+
+.container15{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;  */
+background-color: white;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins';
+    }
+}
+.service-wrapper{
+    padding: 5% 8%;
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins';
+    }
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4, 52, 83);
+    background: linear-gradient(8deg,rgba(8,52,83,1) 0%,#198754(0,230,173,1) 41%, rgba(41,17,45,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 80%;
+    border-radius: 8%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+/* line below h1 designs */
+h1 span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #198754;
+    animation: anim 5s linear infinite;
+}
+@keyframes anim {
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: 80%;
+    }
+}
+.cards{
+   display: grid; 
+   grid-template-columns: repeat(3,1fr);
+   gap: 30px;
+   margin-top: 80px;
+}
+.card{
+    height: 350px;
+    width: 370px;
+    background-color: #1c2335;
+    padding: 3% 8%;
+    border: 0.2px solid rgba(114, 226, 174, 0.2);
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.card::after{
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: #fff;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+
+}
+/* one:after */
+.card:hover::after{
+    width: 225%;
+    top:-100%;
+
+}
+.card i
+{
+    color: #198754;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+}
+.card h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card p{
+    text-align: left;
+    width: 100%;
+    margin: 12px 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+.card:hover{
+    background-color: transparent;
+    transform: translateY(-8px);
+    /* color of the box borders */
+    border-color: #00ff37;
+} 
+.card:hover i{
+    color: #00ff37;
+}
+.card:hover h2,
+.card:hover p {
+    color: black; /* Change text color to black on hover */
+}
+@media screen and (max-width:1200px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:900px) {
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    h1{
+       font-size: 3.5rem; 
+    }
+}
+@media screen and (max-width:1200px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.txt1{
+    font-size: 15px;
+}
+
+.txt2{
+    font-size: 12px;
+}
+
+/* testimony */
+.container11{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+
+.container7 {
+    margin: 80px 0; /* Adds space above and below the container */
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 20px;
+    max-width: 2000px;
+    width: 300%;
+    height: 300%;
+    background-color: #000;
+    color: #fff;
+}
+
+.image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-column img {
+    padding-left: 30px;
+    max-width: 180%; /* Changed from max-width: 100%; to max-width: 80%; to make the image bigger */
+    height: auto;
+    display: block;
+}
+
+.testimony-column {
+    flex: 2;
+    padding: 20px;
+}
+
+.testimony-column p {
+    font-size: 20px;
+    padding-left: 20px;
+    color: #fff;
+    margin: 0;
+}

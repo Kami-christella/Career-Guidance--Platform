@@ -1,0 +1,20 @@
+.nav-link{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.navbar-brand{
+    margin-left: 30px;
+}
+
+#navbarText{
+   margin-left: 250px;
+}
+
+.buttonClass{
+    margin-right: 30px;
+    display: flex;
+    gap: 20px;
+}

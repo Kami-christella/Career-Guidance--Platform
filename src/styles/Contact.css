@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sendSmsTitle{
+    color: white;
+}
+/* Set the background color to white */
+body {
+    background-color: white;
+    color: black; /* Change default text color to black */
+}
+
+#contactIcons {
+    color: black; /* Change contact icons color to black */
+}
+
+#socialIcons {
+   color: #198754; /* Keep social icons color as it is (you can adjust if needed) */
+}
+
+.contact1 {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white; /* Set background to white */
+}
+
+.contact1 .content1 {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact1 .content1 h2 {
+    font-size: 3em;
+    color: #198754; /* Change heading text color to black */
+    font-weight: 500;
+}
+
+.contact1 .content1 p {
+    color: black; /* Change paragraph text color to black */
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: white; /* Set container background to white */
+    margin-top: 30px;
+}
+
+.container1 .contactInfo1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 .contactInfo1 .box1 {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.container1 .contactInfo1 .box1 .icon1 {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 30deg, #198754 0%, #198754 10%, transparent 10%, transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .contactInfo1 .box1 .icon1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg, #198754 0%, #198754 10%, transparent 10%, transparent 50%);
+}
+
+.container1 .contactInfo1 .box1 .icon1::after {
+   content: '';
+   position: absolute;
+   inset: 2px;
+   background: #fff; /* Change background to white */
+}
+
+.container1 .contactInfo1 .box1 .icon1 b {
+    position: absolute;
+    inset: 8px;
+    background: #198754;
+    z-index: 2;
+}
+
+.container1 .contactInfo1 .box1 .icon1 i {
+    position: relative;
+    z-index: 1000;
+    color: #333;
+    font-size: 1.25em;
+}
+
+.container1 .contactInfo1 .box1  .text1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color: black; /* Change text color to black */
+    font-weight: 300;
+}
+
+.container1 .contactInfo1 .box1 .text1 h3 {
+    font-weight: 500;
+    color: #198754;
+}
+
+.container1 .contactInfo1 .txt1 {
+    color: black; /* Change text color to black */
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid #198754;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.container1 .contactInfo1 .sci1 {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.container1 .contactInfo1 .sci1 li {
+    list-style: none;
+}
+
+.container1 .contactInfo1 .sci1 li a {
+    color: black; /* Change link color to black */
+    font-size: 1.5em;
+    transition: 0.25s;
+}
+
+.container1 .contactInfo1 .sci1 li a:hover {
+   color: #01dbc2;
+   filter: drop-shadow(0 0 box #198754);
+}
+
+.container1 .contactForm1 {
+    position: relative;
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a), #198754 0%, #198754 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+}
+
+.container1 .contactForm1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a), #198754 0%, #198754 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.container1 .contactForm1::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid #fff; /* Change border color to white */
+    background: black;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    0% {
+        --a: 0deg;
+    }
+    100% {
+        --a: 360deg;
+    }
+}
+
+.container1 .contactForm1 form {
+    position: relative;
+    z-index: 10;
+}
+
+.container1 .contactForm1 form h2 {
+    font-size: 2em;
+    color: white; /* Change heading text color to black */
+    font-weight: 500;
+}
+
+.container1 .contactForm1 form .inputBox1 {
+    position: inherit;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container1 .contactForm1 form .inputBox1 input,
+.container1 .contactForm1 form .inputBox1 textarea {
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #198754;
+    color: black; /* Change input text color to black */
+    outline: none;
+    resize: none;
+}
+
+.container1 .contactForm1 form .inputBox1 span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: white; /* Change span text color to black */
+    transition: 0.5s;
+}
+
+.container1 .contactForm1 form .inputBox1 input:focus ~ span,
+.container1 .contactForm1 form .inputBox1 textarea:focus ~ span,
+.container1 .contactForm1 form .inputBox1 input:valid ~ span,
+.container1 .contactForm1 form .inputBox1 textarea:valid ~ span {
+    color: #198754;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+.container1 .contactForm1 form .inputBox1 input[type="submit"] {
+    width: 1;
+    background: #198754;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+/* Now, let's make it responsive */
+@media (max-width: 991px) {
+    .contact1 {
+        padding: 50px;
+    }
+    .container1 {
+        flex-direction: column;
+    }
+    .container1.contactInfo1,
+    .container1.contactForm1 {
+        width: 100%;
+    }
+    .container1 .contactForm1 {
+        padding: 40px;
+    }
+    .container1 .contactForm1 form {
+        padding: 10px;
+    }
+}
